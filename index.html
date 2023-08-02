@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itog 4</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="css styles/style.css">
+  
+</head>
+<body>
+
+  <a id="openModal"><i class="fa-solid fa-phone"></i></a>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <h2>Need you help?</h2>
+      <form action="#">
+        <label for="phone">Enter your phone number:</label>
+        <input type="text" id="phone" placeholder="Enter your phone number...">
+        <a href="#" class="btn" id="send-modal">Send form</a>
+      </form>
+    </div>
+  </div>
+
+  <div class="alert-wrapper">
+    <div class="alert" id="alert">
+      <h2></h2>
+    </div>  
+  </div>
+    
+  <nav>
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Website <img src="images/logo.png" alt="Logo"></a>
+
+      <ul class="navbar-menu">
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Woman</a></li>
+        <li><a href="#">Objects</a></li>
+        <li><a href="#">Analog</a></li>
+      </ul>
+
+      <ul class="navbar-right">
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Login</a></li>
+        <li>
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <span class="badge">0</span>
+            <span class="total">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/slide.jpg" alt="Image slide">
+        <div class="container">
+          <div class="slide-content">
+            <h2>Analog: The Simplest Productivity System</h2>
+            <a href="#" class="border-bottom">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/slide.jpg" alt="Image slide">
+        <div class="container">
+          <div class="slide-content">
+            <h2>Another Text Title</h2>
+            <a href="#" class="border-bottom">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about-us">
+    <div class="container">
+      <div class="about-us__content">
+        <div class="about-us__content-text">
+          <h2>About us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt officia veniam! Molestias maiores autem facilis exercitationem enim consequuntur, iste tempora commodi numquam laborum eum, vitae nam minus? Reiciendis, quia.</p>
+          <a href="#" class="border-bottom">Shop the collection</a>
+        </div>
+        <div class="about-us__content-image">
+          <img src="images/about.jpg" alt="Background about img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="catalog">
+    <div class="container">
+      <ul class="categories">
+        <li class="active"><a href="#">New arrivals</a></li>
+        <li><a href="#">Analog</a></li>
+        <li><a href="#">Final stock</a></li>
+        <li><a href="#">Best sellers</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Objects</a></li>
+      </ul>
+
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/product.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Analog Starter Kit</h3> 
+              <span class="category">Walnut</span>
+              <div class="price">
+                <div class="old-price">103.00</div>
+                <!-- <div class="current-price">90.00</div> -->
+                <div class="new-price">89</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/2.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Analog Cards</h3> 
+              <span class="category">3-Pack</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">39.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/3.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>The Analog Complete Set</h3> 
+              <!-- <span class="category">3-Pack</span> -->
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <!-- <div class="current-price">39.00</div> -->
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/4.jpg" alt="Product">
+              <div class="label">
+                Almost Sold Out
+              </div>
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Pen Tray</h3> 
+              <span class="category">Walnut</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">38.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/5.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Pen Tray</h3> 
+              <span class="category">Maple</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">38.00</div>
+                <!-- <div class="new-price">89</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/6.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>HMM Ballpoint Pen</h3> 
+              <span class="category">Black</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">35.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/7.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Mist</h3> 
+              <span class="category">Black Triblend</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">36.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/8.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Circular</h3> 
+              <span class="category">Charcoal</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">36.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/9.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Smell The Roses</h3> 
+              <span class="category">Black</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">36.00</div>
+                <!-- <div class="new-price">89</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/10.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Analog Travel Case</h3> 
+              <span class="category">Gray</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">34.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/11.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>HMM Scissors</h3> 
+              <span class="category">Black</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">45.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/12.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Leather Desk Pad XL</h3> 
+              <span class="category">Ugmonk Logo - Natural</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">265.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/13.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Premium Leather Mousepad XL</h3> 
+              <span class="category">Ugmonk Logo - Brown</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">52.00</div>
+                <!-- <div class="new-price">89</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/14.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Kinto travel tumbler</h3> 
+              <span class="category">Coyote</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">35.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/15.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Discbound Heirloom Journal Bundle</h3> 
+              <span class="category">Natural Journal + 3 Refills</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">45.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/16.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Chunky Knit Beanie</h3> 
+              <span class="category">Olive</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">30.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/17.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Chunky Knit Beanie</h3> 
+              <span class="category">Burgundy</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">30.00</div>
+                <!-- <div class="new-price">89</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/18.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Men's Essential Tee</h3> 
+              <span class="category">Starter Kit - 3-Pack</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <!-- <div class="current-price">35.00</div> -->
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/19.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Craighill Cal Bookend</h3> 
+              <!-- <span class="category">Natural Journal + 3 Refills</span> -->
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">120.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-product">
+            <div class="product-image">
+              <img src="images/products/20.jpg" alt="Product">
+              <!-- <div class="label">
+                Almost Sold Out
+              </div> -->
+              <div class="overlay-actions">
+                <div class="actions">
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i> Add to cart</a>
+                  <a href="#"><i class="fa-solid fa-eye"></i> View product</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Voyage</h3> 
+              <span class="category">Black</span>
+              <div class="price">
+                <!-- <div class="old-price">103.00</div> -->
+                <div class="current-price">36.00</div>
+                <!-- <div class="new-price">80</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 85px;">
+        <a href="#" class="btn btn-black">Shop new arrivals</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="callback">
+    <div class="container">
+      <h2>Stay in the loop</h2>
+      <p>Be the first to know when new products drop and get behind-the-scenes content straight from Ugmonk’s founder.</p>
+
+      <form action="#">
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Enter your E-Mail...">
+          <button type="submit">ok</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Help / FAQ</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Sizing</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">About Our Tees</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="col-6 text-end">
+          <div class="copyright">
+            <div class="copyright-text">
+              <p>© Website 2023 </p>
+              <p>All images and content may not be<br>used without permission</p>
+            </div>
+            <div class="copyright-logo">
+              <img src="images/logo.png" alt="Logo">
+            </div>
+          </div>
+
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="JavaScript/main.js"></script>
+</body>
+</html>
